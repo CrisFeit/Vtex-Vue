@@ -1,0 +1,59 @@
+.filter__price{
+  width: auto;
+  height: auto;
+  padding-bottom: 0.5em;
+  z-index: 3;
+}
+
+.filter__price-title{
+  @extend %filter-nav-title;
+}
+
+.filter__price-wrap{
+  margin: 0.3em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.filter__price-value{
+  color: snow;
+  text-shadow: 0 0 6px snow;
+  font-size: calc(20rem/16);
+  font-weight: bold;
+}
+
+.filter__price-slider{
+    -webkit-appearance: none;
+    outline: none;
+    width: 98%;
+    margin: auto;
+    background: linear-gradient(135deg,white , $filter-brand,$filter-brand-dark ) center/ 100%  3px no-repeat;
+    transition: box-shadow .3s;
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 40px;
+          height: 40px;
+          z-index: 3;
+          border-radius: 50%;
+          border: 2px solid $filter-silver;
+          cursor: grab;
+          background-color: $filter-brand;
+          &:hover{
+            box-shadow: 0 0 10px 2px $filter-brand;
+          }
+      }
+      &::-moz-range-thumb {
+        width: 35px;
+        height: 35px;
+        display: block;
+        z-index: 3;
+        border-radius: 50%;
+        border: 2px solid $filter-silver;
+        cursor: grab;
+        background-color: $filter-brand-dark;
+        &:hover{
+          box-shadow: 0 0 10px 2px $filter-brand;
+        }
+      }
+}

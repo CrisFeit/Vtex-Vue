@@ -1,0 +1,33 @@
+.trees__layer{
+  margin: 5% auto;
+  text-align: center;
+  font-size: calc(20rem/16);
+  color: $filter-dark-middle;
+  font-weight: bold;
+  @extend %under-line;
+}
+
+.shelf__container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 55vh;
+  position: relative;
+}
+
+.shelf__observer{
+  position: relative;
+  bottom: -100%;
+}
+.shelf__empty{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.shelf__empty-text{
+  margin: auto;
+  font-size: calc(20rem/16);
+  text-align: center;
+  @extend %under-line;
+}

@@ -1,0 +1,494 @@
+@media (min-width: 320px){
+    .communication-channels{
+        position: fixed;
+        right: 0;
+        overflow: hidden;
+        bottom: 0;
+        z-index: 99;
+        width: 100%;
+        height: 57px;
+        background: #F5F5F5;
+        .communication-channels__list{
+            ul{
+                li{
+                    margin-top: 20px;
+                    &.quero-revender{
+                        margin-top: 10px;
+                        display: block;
+                        width: 230px;
+                        height: 35px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        border-radius: 30px;
+                        color:#fff;
+                        background: #753BBD;
+                        margin:0 auto;
+                        text-align: center;
+                        line-height: 35px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.05em;
+                        text-decoration: none;
+                        position: relative;
+                        top: 8px;
+                        
+                    }
+                    &.login-repre{
+                        display: none;
+                    }
+                    &.encontre-eudora{
+                        display: none;
+                    }
+
+                    &.guia-virtual{
+                        display: none;
+                    }
+
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        span{
+
+                        }
+                        svg{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 375px){
+    .communication-channels{
+        position: fixed;
+        right: 0;
+        overflow: hidden;
+        bottom: 0;
+        z-index: 99;
+        width: 100%;
+        height: 57px;
+        background: #F5F5F5;
+        .communication-channels__list{
+            ul{
+                li{
+                    margin-top: 20px;
+                    &.quero-revender{
+                        margin-top: 10px;
+                        display: block!important;
+                        width: 230px;
+                        height: 35px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        border-radius: 30px;
+                        color:#fff;
+                        background: #753BBD;
+                        margin:0 auto;
+                        text-align: center;
+                        line-height: 35px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.05em;
+                        text-decoration: none;
+                        position: relative;
+                        top: 8px;
+                        
+                    }
+                    &.login-repre{
+                        display: none;
+                    }
+                    &.encontre-eudora{
+                        display: none;
+                    }
+
+                    &.guia-virtual{
+                        display: none;
+                    }
+
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        span{
+
+                        }
+                        svg{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 414px){
+    .communication-channels{
+        position: fixed;
+        right: 0;
+        overflow: hidden;
+        bottom: 0;
+        z-index: 99;
+        width: 100%;
+        height: 57px;
+        background: #F5F5F5;
+        .communication-channels__list{
+            ul{
+                li{
+                    margin-top: 20px;
+                    &.quero-revender{
+                        margin-top: 10px;
+                        display: block!important;
+                        width: 230px;
+                        height: 35px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        border-radius: 30px;
+                        color:#fff;
+                        background: #753BBD;
+                        margin:0 auto;
+                        text-align: center;
+                        line-height: 35px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.05em;
+                        text-decoration: none;
+                        position: relative;
+                        top: 8px;
+                        
+                    }
+                    &.login-repre{
+                        display: none;
+                    }
+                    &.encontre-eudora{
+                        display: none;
+                    }
+
+                    &.guia-virtual{
+                        display: none;
+                    }
+
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        span{
+
+                        }
+                        svg{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .communication-channels{
+        position: fixed;
+        right: 0;
+        overflow: hidden;
+        bottom: 0;
+        z-index: 99;
+        width: 100%;
+        height: 57px;
+        background: #F5F5F5;
+        .communication-channels__list{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            ul{
+                display: flex;
+                li{
+                    padding: 0 30px;
+                    &.quero-revender{
+                        margin-top: 10px;
+                        display: block;
+                        width: 230px;
+                        height: 35px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        border-radius: 30px;
+                        color:#fff;
+                        background: #753BBD;
+                        margin:0 auto;
+                        text-align: center;
+                        line-height: 54px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.05em;
+                        text-decoration: none;
+                        position: relative;
+                        top: 12px;
+                        
+                    }
+                    &.login-repre{
+                        display: block;
+                        position: relative;
+                        top: -8px;
+                        
+                    }
+                    &.encontre-eudora{
+                        display: block;
+                        position: relative;
+                        top: -8px;
+                    }
+
+                    &.guia-virtual{
+                        display: block;
+                        position: relative;
+                        top: -8px;
+                       
+                    }
+
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        span{
+                            position: relative;
+                            top: -10px;
+                            line-height: 52px;
+                            vertical-align: top;
+                            text-transform: uppercase;
+                        }
+                        svg{
+                            position: relative;
+                            left: -8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// @media (min-width: 1280px){
+//     .communication-channels{
+//         position: fixed;
+//         right: 0;
+//         overflow: hidden;
+//         bottom: 0;
+//         z-index: 99;
+//         width: 100%;
+//         height: 57px;
+//         background: #F5F5F5;
+//         .communication-channels__list{
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: center;
+//             ul{
+//                 display: flex;
+//                 li{
+//                     padding: 0 30px;
+//                     &.quero-revender{
+//                         margin-top: 10px;
+//                         display: block;
+//                         width: 230px;
+//                         height: 35px;
+//                         font-size: 16px;
+//                         font-weight: bold;
+//                         border-radius: 30px;
+//                         color:#fff;
+//                         background: #753BBD;
+//                         margin:0 auto;
+//                         text-align: center;
+//                         line-height: 54px;
+//                         text-transform: uppercase;
+//                         letter-spacing: 0.05em;
+//                         text-decoration: none;
+//                         position: relative;
+//                         top: 12px;
+                        
+//                     }
+//                     &.login-repre{
+//                         display: block;
+//                         position: relative;
+//                         top: -8px;
+                        
+//                     }
+//                     &.encontre-eudora{
+//                         display: block;
+//                         position: relative;
+//                         top: -8px;
+//                     }
+
+//                     &.guia-virtual{
+//                         display: block;
+//                         position: relative;
+//                         top: -8px;
+                       
+//                     }
+
+//                     a{
+//                         display: block;
+//                         text-decoration: none;
+//                         span{
+//                             position: relative;
+//                             top: -10px;
+//                             line-height: 52px;
+//                             vertical-align: top;
+//                             text-transform: uppercase;
+//                         }
+//                         svg{
+//                             position: relative;
+//                             left: -8px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 1300px){
+//     .communication-channels{
+//         position: fixed;
+//         right: 0;
+//         overflow: hidden;
+//         bottom: 0;
+//         z-index: 99;
+//         width: 100%;
+//         height: 57px;
+//         background: #F5F5F5;
+//         .communication-channels__list{
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: center;
+//             ul{
+//                 display: flex;
+//                 li{
+//                     padding: 0 30px;
+//                     &.quero-revender{
+//                         margin-top: 10px;
+//                         display: block;
+//                         width: 230px;
+//                         height: 35px;
+//                         font-size: 16px;
+//                         font-weight: bold;
+//                         border-radius: 30px;
+//                         color:#fff;
+//                         background: #753BBD;
+//                         margin:0 auto;
+//                         text-align: center;
+//                         line-height: 54px;
+//                         text-transform: uppercase;
+//                         letter-spacing: 0.05em;
+//                         text-decoration: none;
+//                         position: relative;
+//                         top: 12px;
+                        
+//                     }
+//                     &.login-repre{
+//                         display: block;
+//                         position: relative;
+//                         top: -8px;
+                        
+//                     }
+//                     &.encontre-eudora{
+//                         display: block;
+//                         position: relative;
+//                         top: -8px;
+//                     }
+
+//                     &.guia-virtual{
+//                         display: block;
+//                         position: relative;
+//                         top: -8px;
+                       
+//                     }
+
+//                     a{
+//                         display: block;
+//                         text-decoration: none;
+//                         span{
+//                             position: relative;
+//                             top: -10px;
+//                             line-height: 52px;
+//                             vertical-align: top;
+//                             text-transform: uppercase;
+//                         }
+//                         svg{
+//                             position: relative;
+//                             left: -8px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 1920px){
+//     .communication-channels{
+//         position: fixed;
+//         right: 0;
+//         top: 92%;
+//         z-index: 99;
+//         width: 100%;
+//         height: 57px;
+//         background: #F5F5F5;
+//         .communication-channels__list{
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: center;
+//             ul{
+//                 display: flex;
+//                 li{
+//                     padding: 0 30px;
+//                     &.quero-revender{
+//                         margin-top: 10px;
+//                         display: block;
+//                         width: 230px;
+//                         height: 35px;
+//                         font-size: 16px;
+//                         font-weight: bold;
+//                         border-radius: 30px;
+//                         color:#fff;
+//                         background: #753BBD;
+//                         margin:0 auto;
+//                         text-align: center;
+//                         line-height: 54px;
+//                         text-transform: uppercase;
+//                         letter-spacing: 0.05em;
+//                         text-decoration: none;
+//                         position: relative;
+//                         top: 12px;
+                        
+//                     }
+//                     &.login-repre{
+//                         display: block;
+//                         position: relative;
+//                         top: -8px;
+                        
+//                     }
+//                     &.encontre-eudora{
+//                         display: block;
+//                         position: relative;
+//                         top: -8px;
+//                     }
+
+//                     &.guia-virtual{
+//                         display: block;
+//                         position: relative;
+//                         top: -8px;
+                       
+//                     }
+
+//                     a{
+//                         display: block;
+//                         text-decoration: none;
+//                         span{
+//                             position: relative;
+//                             top: -10px;
+//                             line-height: 52px;
+//                             vertical-align: top;
+//                             text-transform: uppercase;
+//                         }
+//                         svg{
+//                             position: relative;
+//                             left: -8px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

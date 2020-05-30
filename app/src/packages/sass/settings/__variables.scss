@@ -1,0 +1,41 @@
+
+/**
+ * General Variables
+ * Call on every SASS files
+ */
+
+
+
+// Containers
+$container-width: 1400px;
+
+// Offcanvas sizes
+$off-canvas-max-width: 435px;
+
+// Header
+$mobile-header-height: 70px;
+$desktop-header-height: 82px;
+
+// Form inputs height
+$input-height: 40px;
+
+// Build Car
+$mobile-build-car-nav-height: 38px;
+$desktop-build-car-nav-height: 82px;
+$mobile-build-car-footer-height: 52px;
+$mobile-build-car-terms-height: 0;
+$mobile-build-car-version-height: 64px;
+$desktop-build-car-version-height: 102px;
+$desktop-right-title-height: 162px;
+
+//Account
+$mobile-account-padding-left:37px;
+
+// Material
+$standard-ease                : cubic-bezier(0.4, 0.0, 0.2, 1);
+$accelerate-ease              : cubic-bezier(0.4, 0.0, 1, 1);
+$decelerate-ease              : cubic-bezier(0.0, 0.0, 0.2, 1);
+
+//Custom easing
+$InOutBack-ease : cubic-bezier(0.680, -0.550, 0.265, 1.550);
+

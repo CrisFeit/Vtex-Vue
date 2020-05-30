@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="/arquivos/My-Store.css">
+
+<aside class="bag">
+  <section class="bag-top">
+    <div class="bag-top__info">
+      <i class="bag-top__icon js--bag-amount"></i>
+      <div class="bag-top__title">Minha Sacola</div>
+      <div class="bag-top__close js--bag-close">&#10005;</div>
+    </div>
+
+    <vtex.cmc:Prise />
+    
+    <div class="bag-top__load-wrap">
+      <div class="bag-top__load js--bag-load"></div>
+    </div>
+  </section>
+
+  <section class="bag-shelf js--bag-itens">
+
+  </section>
+
+  <section class="bag-bottom">
+    <fieldset class="bag-bottom__bonus js--bag-bonus">
+      
+    </fieldset>
+    <div class="bag-bottom__discount js--bag-discount-block">
+      <span class="bag-bottom__discount-left">Descontos</span>
+      <span class="bag-bottom__discount-right js--bag-discount"></span>
+    </div>
+    <div class="bag-bottom__total">
+      <span class="bag-bottom__total-left">Subtotal</span>
+      <span class=" bag-bottom__total-right js--bag-total"></span>
+    </div>
+    <div class="bag-bottom__cta">
+      <div class="bag-bottom__cta-keep js--bag-close">Continuar Comprando</div>
+      <a href="/checkout/#/cart" class="bag-bottom__cta-finish">Finalizar Compra</a>
+    </div>
+  </section>
+  <div class="bag__disable js--bag-disable"></div>
+</aside>
+<div class="overlay overlay--close js--overlay js--bag-close">
+</div>
+
+<script defer="true" src="/arquivos/My-Store-Minicart.js"></script>

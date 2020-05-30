@@ -1,0 +1,57 @@
+body{
+  overflow-x: hidden;
+}
+
+.bag{
+  select,option,button {
+    
+     overflow: visible; // Shrinkwrap the text in IE7-     
+     line-height: normal; // Override line-height to avoid spacing issues
+     cursor: pointer; // Buttons don’t make the cursor change in all browsers
+     -moz-user-select: text; // Make button text selectable in Gecko
+     outline: none;
+     background: transparent;
+     border: none;
+     }
+  a{
+    text-decoration: none;
+  }
+}
+.bag{
+  position: fixed;
+  width: 40vw;
+  height: 100%;
+  max-height: 100%;
+  min-width: 300px;
+  max-width: 400px;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 9910;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  box-sizing: border-box;
+  transform: translateX(100%);
+  visibility: hidden;
+  will-change: transform,visibility;
+            &--open{ // animation
+              visibility: visible;
+              transform: translateX(0);            
+            }
+    
+        @media (max-width: 768px){
+          font-size: 0.9rem;
+          width: 75%;
+          height: 100%;
+          max-height: 100vh;
+        }
+        @media (max-width: 420px){
+          font-size: 0.85rem;
+          width: 100vw;
+          height: 100%;
+          max-height: 100vh;
+        }
+}

@@ -1,0 +1,49 @@
+.bag{
+  box-shadow: 0 0 40px 5px #000;
+}
+
+.bag-top{
+  background-color: $bag-color-dark;
+  &__info{
+    color: snow;
+  }
+
+  &__close{
+    background-color: $bag-color-dark;
+    color: snow;
+    background-color: $bag-color-primary;
+    border-radius: 50%;
+    transform: scale(.8);
+    &:hover{
+      text-shadow: 0 0 4px snow;
+    }
+  }
+  &__load{
+    background: linear-gradient(to right, $bag-color-dark,$bag-color-primary) center/ 100%  3px no-repeat;
+    margin-bottom: 2%;
+  }
+}
+
+
+.bag-bottom{
+  background-color: $bag-color-dark;
+  color: snow;
+
+  &__cta{
+    &-keep{
+      background-color: transparent;
+      color: snow;
+      border: solid 1px snow;
+      &:hover {
+        background-color:$bag-color-primary;
+      }
+    }
+    &-finish{
+      border: solid 1px snow;
+      &:hover{
+        font-weight: bold;
+        text-shadow: 0 0 4px snow;
+      }
+    }
+  }
+}

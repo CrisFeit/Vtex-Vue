@@ -1,0 +1,63 @@
+.filter__price{
+  position: absolute;
+  left: 0;
+  width: auto;
+  height: auto;
+}
+.filter__price-title{
+  font-size: calc(15rem/16);
+  color: $filter-dark-middle;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.filter__price-wrap{
+  margin-bottom: 0.5em;
+}
+.filter__price-value{
+  @extend %filters-label;
+  border-color: $filter-brand;
+  color: snow;
+  background-color: $filter-brand;
+    
+  font-size: calc(14rem/16);
+}
+.filter__price-slider{
+    -webkit-appearance: none;
+    outline: none;
+    width: 250px;
+    height: 50px;
+    background: linear-gradient(135deg,#dab1eb , $filter-brand,$filter-brand-dark ) center/ 100%  3px no-repeat;
+    transition: box-shadow .3s;
+    @media (max-width:1080px){
+      width: 125px;
+      height: 30px;
+    }
+    cursor: pointer;
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 25px;
+          height: 25px;
+          z-index: 3;
+          border-radius: 50%;
+          border: 2px solid $filter-silver;
+          cursor: grab;
+          background-color: $filter-brand-dark;
+          &:hover{
+            box-shadow: 0 0 10px 2px $filter-brand;
+          }
+      }
+      &::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        display: block;
+        z-index: 3;
+        border-radius: 50%;
+        border: 2px solid $filter-silver;
+        cursor: grab;
+        background-color: $filter-brand-dark;
+        &:hover{
+          box-shadow: 0 0 10px 2px $filter-brand;
+        }
+      }
+}

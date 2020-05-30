@@ -1,0 +1,154 @@
+.ico{
+    font-family: var(--ui-icon-font);
+    font-style: normal;
+    &.ico--profile{
+        &:before{
+            content: '\e99d';
+        }
+    }
+    &.ico--search{
+        &:before{
+            content: '\e99e';
+        }
+    }
+    &.ico--find{
+        &:before{
+            content: '\e91b';
+        }
+    }
+    &.ico--star{
+        &:before{
+            content: '\e91b';
+        }
+    }
+    &.ico--bag{
+        &:before{
+            content: '\e99f';
+        }
+    }
+    &.ico--ticket{
+        &:before{
+            content: '\e99b';
+        }
+    }
+    &.ico--truck{
+        &:before{
+            content: '\e999';
+        }
+    }
+    &.ico--credit{
+        &:before{
+            content: '\e99a';
+        }
+    }
+    &.ico--coupon{
+        &:before{
+            content: '\e99a';
+        }
+    }
+    &.ico--help{
+        &:before{
+            content: '\e900';
+        }
+    }
+    &.ico--chat{
+        &:before{
+            content: '\e913';
+        }
+    }
+    &.ico--reseller{
+        &:before{
+            content: '\e903';
+        }
+    }
+    &.ico--map{
+        &:before{
+            content: '\e902';
+        }
+    }
+    &.ico--map-eudora{
+        &:before{
+            content: '\e914';
+        }
+    }
+    &.ico--youtube{
+        &:before{
+            content: '\e912';
+        }
+    }
+    &.ico--facebook{
+        &:before{
+            content: '\e910';
+        }
+    }
+    &.ico--instagram{
+        &:before{
+            content: '\e911';
+        }
+    }
+    &.ico--twitter{
+        &:before{
+            content: '\e99c';
+        }
+    }
+    &.ico--copy{
+        &:before{
+            content: '\e909';
+        }
+    }
+    &.ico--visa{
+        &:before{
+            content: '\e90f';
+        }
+    }
+    &.ico--mastercard{
+        &:before{
+            content: '\e90e';
+        }
+    }
+    &.ico--amex{
+        &:before{
+            content: '\e908';
+        }
+    }
+    &.ico--dinersclub{
+        &:before{
+            content: '\e90a';
+        }
+    }
+    &.ico--hipercard{
+        &:before{
+            content: '\e90c';
+        }
+    }
+    &.ico--elo{
+        &:before{
+            content: '\e90b';
+        }
+    }
+    &.ico--jcb{
+        &:before{
+            content: '\e998';
+        }
+    }
+    &.ico--invoice{
+        &:before{
+            content: '\e90d';
+        }
+    }
+    &.ico--acesso-facil{
+        &:before{
+            content: '\e918';
+        }
+    }
+    &.ico--handtalk{
+        &:before{
+            content: '\e91a';
+        }
+    }
+    &.ico--contrast{
+        &:before{
+            content: '\e919';
+        }
+    }
+}

@@ -1,0 +1,66 @@
+// icon star \e91b
+.prise{
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #e6e7e8;
+  text-transform: uppercase;
+  z-index: 400;
+  font-size: calc(14rem/16);
+  top: 0;
+  position: fixed;
+  box-sizing: border-box;
+    @media(max-width: 768px){
+      font-size: calc(12rem/16);
+    }
+  &__text{
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // height: 100%;
+    box-sizing: border-box;
+    &--show{
+      display: flex;
+      animation: shine1 1.5s ;
+    }
+    &-content{
+      z-index: 420;
+      text-align: center;
+      width: 99%;
+      margin: auto;
+      padding: 7px;
+      box-sizing: border-box;
+      &--complete{
+        color: snow;
+        font-weight: bold;
+        letter-spacing: 1px;
+        animation: shine2 1.5s ;
+        }
+    }
+  }
+
+  &__track{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(125deg ,$prise-primary-dark 25%, $prise-primary-light 60%) center/ 100% 100% no-repeat;
+    transform: translateX(-100%);
+    will-change: transform;
+    transition: transform 1s ease-out;
+    z-index: 410;
+
+
+    &--complete{
+      background: linear-gradient(125deg ,$prise-secondary-dark 25%, $prise-secondary-light 50%) center/ 100% 100% no-repeat;
+      transform: translateX(0) !important;
+    }
+  }
+  &__remain{
+    font-weight: bold;
+  }
+}

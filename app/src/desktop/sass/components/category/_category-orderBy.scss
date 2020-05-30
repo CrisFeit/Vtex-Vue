@@ -1,0 +1,76 @@
+.sort-nav{
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 3em;
+  margin-bottom: 0.5em;
+}
+.trees__layer{
+  margin: auto;
+  text-align: left;
+  font-size: calc(20rem/16);
+  font-weight: bold;
+  color: $filter-dark-middle;
+  @extend %under-line;
+}
+.sort {
+    border: 1px solid $filter-silver;
+    width: auto;
+    height: auto;
+    width: 13em;
+    min-width: 100px;
+    max-width: 300px;
+    position: absolute;
+    right: 0;
+    &__dropdown-btn{
+      font-size: calc(13rem/16);
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0.5em 0.2em;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      color: $filter-dark-middle;
+    }
+    &__dropdown-btn::before {
+      font: calc(13rem/16)/1 var(--ui-icon-font);
+      content: '\e9aa';
+    }
+    &__dropdown-btn::after{
+      @extend %arrow-down;
+    }
+    &__dropdown-btn--open::after{
+      @extend %arrow-up;
+    }
+     &__dropdown-box{
+      @extend %combo-box;
+     }
+    }
+    .sort__dropdown-box{
+      position: absolute;
+      width: 100%;
+      background-color: white;
+      border-left: 1px solid $filter-silver;
+      border-right: 1px solid $filter-silver;
+      border-bottom: 1px solid $filter-silver;
+      left: -1px;
+      z-index: 100;
+    }
+    .sort__item {
+      @extend %combo-options;
+      @extend %hover-default;
+      text-align: center;
+      border-radius: 30px;
+      width: fit-content;
+      margin: auto;
+      padding: 0.3em 0.5em;
+          &--chosen{
+            background-color: $filter-brand;
+            color: snow;
+          }
+    }

@@ -1,0 +1,15 @@
+
+%arrow-down{
+  content: '';
+  display: block;
+  width: 0.8em;
+  height: 0.8em;
+  border-right: solid var(--ui-dark-middle) 2px;
+  border-bottom: solid var(--ui-dark-middle) 2px;
+  transform: scaleY(1) translateY(-25%) rotate(45deg);
+  transition: transform .25s linear;
+}
+
+%arrow-up{
+  transform: scaleY(-1) translateY(-25%) rotate(45deg);
+}

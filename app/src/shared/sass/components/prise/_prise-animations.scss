@@ -1,0 +1,40 @@
+@keyframes shine1{
+  0%{
+    color:$prise-primary-dark;
+  }
+  20%{
+    color: #111;
+  }
+  40%{
+    color:$prise-primary-dark;
+  }
+  60%{
+    color: #111;
+  }
+  80%{
+    color: $prise-primary-dark;
+  }
+  100%{
+    color:#111;
+  }
+}
+@keyframes shine2{
+  0%{
+    color:$prise-secondary-light;
+  }
+  20%{
+    color: snow;
+  }
+  40%{
+    color:$prise-secondary-light;
+  }
+  60%{
+    color: snow;
+  }
+  80%{
+    color: $prise-secondary-light;
+  }
+  100%{
+    color:snow;
+  }
+}

@@ -1,0 +1,24 @@
+.brands{
+  @extend %filters-box;
+  flex-basis: auto;
+  max-width: 45%;
+  padding-left: 1em;
+  &__title{
+    @extend %filters-title;
+    
+  }
+  &__box{
+    @extend %filters-selectors;
+    flex-wrap: wrap;
+    padding: 0.5em;
+  }
+  &__label{
+    @extend %filters-label;
+    @extend %hover-default;
+    &--active{
+      border-color: $filter-brand;
+      color: snow;
+      background-color: $filter-brand;
+    }
+  }
+}

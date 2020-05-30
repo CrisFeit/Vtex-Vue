@@ -1,0 +1,71 @@
+html {
+  font-family: $font-main;
+  font-size: 1rem;
+  box-sizing: border-box;
+  height: 100%;
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    font-size: 0.8rem;
+  }
+
+  @media screen and (min-width: 1025px) and (max-width: 1279px) {
+    font-size: 0.9rem;
+  }
+
+  @media screen and (min-width: 1280px) and (max-width: 1440px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (min-width: 1441px) and (max-width: 1680px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (min-width: 1681px) and (max-width: 1920px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (min-width: 1921px) and (max-width: 2160px) {
+    font-size: 1.3rem;
+  }
+
+  @media screen and (min-width: 2161px) {
+    font-size: 1.4rem;
+  }
+}
+
+body {
+  box-sizing: border-box;
+
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* stop WebKit and Windows mobile changing text size */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  // color: $color-body-text;
+  // background-color: $color-body-bg;
+  // font-family: $font-main;
+}
+
+main {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  height: auto;
+  max-width: 1920px;
+  width: 98%;
+}
+
+img {
+  max-width: 100%;
+}

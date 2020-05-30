@@ -1,0 +1,124 @@
+.bag-shelf__empty{
+  margin:  0.3em auto;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &-title{
+    margin:  0 auto; 
+    text-align: center;
+    font-weight: bold;
+    height: auto;
+  }
+
+  &-text{
+    width: 100%;
+    font-size: calc(13rem/16);
+    height: auto;
+    margin: 0 auto 0;
+    &::after{
+      content: "";
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      padding: 10px 0 0 0;
+      width: 100%;
+      background: white linear-gradient(to right,white, $bag-color-secondary, white) center/ 100%  1px no-repeat;
+    }
+  }
+}
+
+%link-icons{
+  font-family: var(--ui-icon-font);
+  display: block;
+  font-size: calc(30rem/16);
+  margin: 0.1em auto ;
+  border-radius: 50%;
+  padding: .2em;
+  width: auto;
+  @media screen and (max-width:340px){
+    margin: 0;
+  }
+    &:hover{
+      box-shadow: 0 0 0.8em $color-primary;
+    }
+}
+
+.bag-shelf__display{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  &-all{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+      &::before{
+        margin: auto;
+        text-align: center;
+        width: 34px;
+        padding-right: .4em;
+        height: auto;
+        @extend %link-icons;
+        content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAYCAMAAADJYP15AAAAAXNSR0IB2cksfwAAAa1QTFRFAAAAo5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5FhpJJip5ZjpJJio5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5FhpJRjo5Jio5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5FhoY9fo5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5FipZRjo5Fho5Fho5Fho5Fho5Fho5Fho5Fho5FhrZtqo5Fho5Fho5Fho5Fho5Fho5FhpJJho5Fho5Fho5Fho5Fio5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5FhpJFho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5Fho5FhpZNio5FhYYtCMwAAAI90Uk5TAAABBAMhkq+urbCysWYGMI/3/82en6fB68QLD8b6TgAAAQksnP4QB7n4RQ7WFEnPGhizBWsbx/JXGQAARu++VCI8dtstPvTMfEsxIxdkm9zKTQA/9uKHaSCk8G1C33MIAQDq3lwV1FNZZQCMRI2GEb0A878NAOY1CqjuJ1blJADxaKyDO4K30dnTwp0pABLLXPQ9AAABW0lEQVR4nG2S6VdBYRDG3yEhoUbSglvpUmlBRGinJO3aF+1pX5S0ad+XvznXvQeHni9zzm/eeWaec15CgMfPyxIPCAFBvlAkFhdIWBUKxSIpL4Fl8qJiREUJI2WpqgyxvIIkBJVq1GiBIqQKqmt0tbRCn8SGOqxvAMIKjMLGplxMQXOLKRcTMFsE/+FWq411a0O7ox2cnIuLz2MouDuws0tpg9QAIYbunt4+u8Tj7R/wDfqHjMydCQWGR0bpsfGJySA9JZme0XGYgrzZOZxfWFxaFoRWYDXtA/I1XN9wUBnWSby5hZrt6ixKQK9AOpyiFHSnwuNOOs7u3n6ywgHiYepqODr2MvUE3KcYOePwOWijF2w/donBMPucApPqysMtuVbj0k0MXKvA91vwNs4O3kFceR+MHFoffI9rdPQpxK1xguH55fXt/f3j80v6zc+IQP3I9AHzbw3zG8gfNyA6K9PdKtEAAAAASUVORK5CYII=');
+        z-index: 2;
+
+        
+          &:hover{
+            box-shadow: 0 0 0.8em $color-secondary !important;
+          }
+      }
+      
+      p{
+        width: 100%;
+        font-size: calc(13rem/16);
+        margin-bottom: 4px;
+      }
+  }
+  &-item{
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (max-width:420px){
+      width: 30%;
+   }
+   &::before{
+     z-index: 2;
+   }
+      p{
+        width: 100%;
+        font-size: calc(14rem/16);
+      }
+      &--maquiagem::before{
+        @extend %link-icons;
+        content: "\e9ad";
+        
+      }
+      &--perfumaria::before{
+        @extend %link-icons;
+        content: "\e9ae";
+      }
+      &--cabelos::before{
+        @extend %link-icons;
+        content: "\e9af";
+      }
+      &--rosto::before{
+        @extend %link-icons;
+        content: "\e9ab";
+      }
+      &--corpo::before{
+        @extend %link-icons;
+        content: "\e9ac";
+      }
+      &--kits::before{
+        @extend %link-icons;
+        content: "\e9a7";
+      }
+  }
+}

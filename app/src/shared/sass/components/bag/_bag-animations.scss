@@ -1,0 +1,31 @@
+@keyframes bagShow{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes loading{
+  0%{
+    width : 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+.bag__disable{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:transparent;
+  z-index: 520;
+  overflow: hidden;
+  display: none;
+  &--open{
+    display: block;
+  }
+}

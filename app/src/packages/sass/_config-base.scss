@@ -1,0 +1,17 @@
+/*
+  Settings
+*/
+ @import './settings/_colors.scss';
+ @import './settings/_typography.scss';
+ @import './settings/_variables.scss';
+ /*
+  Tools
+ */
+ @import './tools/_functions.scss';
+ @import './tools/_mixins.scss';
+ @import './tools/_place-holders';
+  
+ /*
+  Vendor | Plugins
+ */
+  @import './vendors/scss-animate/_animate.scss';

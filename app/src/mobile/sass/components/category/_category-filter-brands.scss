@@ -1,0 +1,20 @@
+.brands{
+  @extend %filters-box;
+
+  &__title{
+    @extend %filter-nav-title;
+    width: 100%;
+  }
+  &__box{
+    @extend %filters-selectors;
+  }
+  &__label{
+    @extend %filters-label;
+    @extend %hover-default;
+    &--active{
+      border-color: $filter-brand;
+      color: snow;
+      background-color: $filter-brand;
+    }
+  }
+}

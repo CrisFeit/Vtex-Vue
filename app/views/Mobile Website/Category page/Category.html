@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+  xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-BR">
+
+<head>
+  <link rel="stylesheet" href="/arquivos/Category.css" />
+</head>
+
+<body>
+
+  <main id="mnContent" role="main">
+
+    <section id="vue-category" class="category-container" role="contentinfo">
+      <vtex.cmc:searchNavigator />
+      <div id="vue-shelfs" class="shelfs"></div>
+      <div class="buttons__box buttons__box--bottom">
+        <div id="vue-filters-box" class="filters__box">
+          <div id="vue-nav-box" class="nav-box"></div>
+        </div>
+      </div>
+    </section>
+    <i class="shelf__observer" id="vueObserver"></i>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script defer="true" src="/arquivos/vue-category.js"></script>
+
+</body>
+
+</html>

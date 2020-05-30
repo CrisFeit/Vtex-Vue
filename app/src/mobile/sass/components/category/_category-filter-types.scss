@@ -1,0 +1,46 @@
+.types{
+  @extend %filters-box;
+  &__title{
+    @extend %filter-nav-title;
+    width: 100%;
+  }
+  &__box{
+    @extend %filters-selectors;
+    overflow: auto;
+  }
+  &__label{
+   @extend %filters-label;
+  }
+}
+
+.types__text{
+  @extend %hover-default;
+  &:after{
+    display: block;
+    content: attr(title);
+  }
+  &.types__label--active{
+    border-color: $filter-brand;
+    color: snow;
+    background-color: $filter-brand;
+    }
+}
+.types__thumb{
+  padding: 2px;
+  border: 1px solid$filter-silver;
+    &:hover{
+      border-color: $filter-hover-dark;
+    }
+    &.types__label--active{
+      border-color: $filter-brand;     
+      box-shadow: 0 0 .5em $filter-brand;
+      }
+  i{
+    border-radius: 50%;
+    display: flex;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    @extend %round-thumbs;
+  }
+}

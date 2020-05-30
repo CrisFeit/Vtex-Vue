@@ -1,0 +1,21 @@
+.bag .prise{
+  background-color: $prise-dark;
+  color: #f1f1f1;
+  &__track{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(125deg ,$prise-primary-dark 25%, $prise-primary-darkness 60%) center/ 100% 100% no-repeat;
+    transform: translateX(-100%);
+    will-change: transform;
+    transition: transform 1s ease-out;
+    z-index: 410;
+
+    &--complete{
+      background: linear-gradient(125deg ,$prise-secondary-dark 25%, $prise-secondary-light 50%) center/ 100% 100% no-repeat;
+      transform: translateX(0) !important;
+    }
+  }
+}

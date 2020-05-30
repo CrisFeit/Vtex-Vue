@@ -1,0 +1,32 @@
+
+.product__rating{
+  text-align: center;
+  margin: .2em auto 0;
+  width: 100%;
+  min-height: 2em;
+}
+.rating{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  &__stars{
+    font: calc(13rem/16)/1 var(--ui-icon-font);
+    display: flex;
+    color: $filter-gold;
+    margin: auto 0.1em;
+    &--empty::after{
+      content: '\e9a5';
+    }
+    &--half::after{
+      content: '\e9a2';
+    }
+    &--full::after{
+      content: '\e9a1';
+    }
+  }
+}
+.rating__totals{
+  color: $filter-gold;
+  font-size: calc(13rem/16);
+}

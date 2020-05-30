@@ -1,0 +1,40 @@
+
+
+.sort__title{
+  @extend %filter-nav-title;
+  
+ }
+    .sort__dropdown-box{
+      position: absolute;
+      text-transform:capitalize;
+      color: var(--ui-dark-middle);
+      letter-spacing: 0.03em;
+      padding-bottom: 1em ;
+      -webkit-appearance: none;
+      width: 100%;
+      background-color: white;
+      z-index: 100;
+      left: 0;
+      z-index: 10;
+      bottom: 100%;
+      transition: transform 0.3s;
+      transform-origin: bottom;
+      transform: scaleY(0);
+          &--open{
+            transform: scaleY(1);
+          }
+    }
+    .sort__item {
+      @extend %combo-options;
+      @extend %hover-default;
+      text-align: center;
+      border-radius: 30px;
+      width: fit-content;
+      margin: auto;
+      padding: 0.3em 0.5em;
+      font-size: calc(18rem/16);
+          &--chosen{
+            background-color: $filter-brand;
+            color: snow;
+          }
+    }

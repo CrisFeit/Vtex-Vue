@@ -1,0 +1,9 @@
+.bag .prise{
+  position: initial;
+  min-height: 25px;
+  font-size: calc(12rem/16);
+    @media(max-width: 560px){
+      font-size: calc(10rem/16);
+    }
+    background-color: $color-ice;
+}

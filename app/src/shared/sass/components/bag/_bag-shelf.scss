@@ -1,0 +1,143 @@
+.bag-shelf {
+  width: 99%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1%;
+
+  @media (min-height: 800px) {
+    max-height: calc(100vh - 35%);
+  }
+
+  @media (max-height: 700px) {
+    max-height: calc(100vh - 42%);
+  }
+
+  @media (max-height: 600px) {
+    max-height: calc(100vh - 44%);
+  }
+
+  @media (max-height: 580px) {
+    max-height: calc(100vh - 46%);
+  }
+
+  @media (max-height: 560px) {
+    max-height: calc(100vh - 48%);
+  }
+
+  &::-webkit-scrollbar {
+    width: 9px;
+    background-color: #fff;
+
+    @media (max-width: 480px) {
+      width: 2px;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: 9px solid $bag-color-primary-dark;
+
+    @media (max-width: 480px) {
+      border-width: 2px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    width: 97%;
+    height: fit-content;
+    flex-wrap: wrap;
+    padding: 1% 0 2.5% 1%;
+    opacity: 0;
+    animation: bagShow 2s ease forwards;
+
+    @media (max-width: 480px) {
+      width: 95%;
+      padding-right: 1%;
+      min-height: 90px;
+    }
+
+    &-img-anchor {
+      flex-shrink: 0;
+      align-self: center;
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &-info {
+      display: flex;
+      flex: 1 3;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0.5% 2.5%;
+
+      &-name {
+        font-size: calc(13em/16);
+        width: 70%;
+      }
+
+      &-price {
+        font-size: calc(14em/16);
+        text-align: right;
+        justify-self: flex-end;
+        width: 30%;
+        color: $bag-color-secondary;
+        font-weight: bold;
+
+        &-discount {
+          text-decoration: line-through;
+          font-style: italic;
+          color: grey;
+          font-weight: lighter;
+        }
+      }
+
+      &-quantity {
+        border: 0;
+        margin-top: 2%;
+        color: $bag-color-secondary;
+        transition: transform 0.2s ease;
+      }
+
+      &-del {
+        margin-top: 2%;
+        transition: transform 0.2s ease;
+
+        &:after {
+          font-family: var(--ui-icon-font);
+          font-size: calc(18em/16);
+          content: "\e9a0";
+          display: block;
+        }
+
+      }
+
+      &-gift {
+        margin-top: 5%;
+
+        &:after {
+          color: $bag-color-secondary;
+          font-family: var(--ui-icon-font);
+          content: "\e9a5";
+          display: block;
+          font-size: calc(20em/16);
+        }
+      }
+    }
+
+    //------------------- Esconder Quantidade de caixa de presente ---------------------
+    &[data-id="4022"] &-info-quantity ,
+    &[data-id="3699"] &-info-quantity ,
+    &[data-id="844"] &-info-quantity  {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}

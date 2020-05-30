@@ -1,0 +1,124 @@
+.buttons__box{
+  width: 100%;
+  height: 3.5em;
+  max-height: 80px;
+  background-color: $filter-brand;
+  z-index: 480;
+  color: snow;
+  display: flex;
+  justify-content: space-around;
+
+  &--bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.filters__box,.sort{
+  display: flex;
+  width: 50%;
+  outline: none;
+}
+%filter-buttons{
+  outline: none;
+  margin: auto;
+  font-size: calc(20rem/16);
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.filter__button{
+  @extend %filter-buttons;
+  border-right: 1px solid snow;
+  z-index: 9;
+  height: 60%;
+
+    &--active{
+      text-shadow: 0 0 8px snow;
+      font-weight: bold;
+    }
+
+  &::before {
+    font: calc(17rem/16)/1 var(--ui-icon-font);
+    content: '\e9a8';
+    margin-right: 0.7em;
+  }
+}
+
+.close__button{
+  @extend %filter-buttons;
+}
+
+  .sort__dropdown-btn{
+    @extend %filter-buttons;
+    z-index: 9;
+      &--active{
+        text-shadow: 0 0 8px snow;
+        font-weight: bold;
+      }
+    &::before {
+      font: calc(17rem/16)/1 var(--ui-icon-font);
+      content: '\e9aa';
+      margin-right: 0.7em;
+    }
+  }
+.apply{
+  @extend %filter-buttons;
+  color: snow;
+  background-color: snow;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    &__button{
+      outline: none;
+      color: $filter-gold;
+      background-color:#0f0f0f;
+      font-size: calc(19rem/16);
+      text-transform: uppercase;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      border-radius: 30px;
+      margin: 0 auto 0.3em ;
+      padding: 0.5em 0.8em;
+      text-shadow: 0 0 3px $filter-gold;
+
+      &:active{
+        font-weight: bold;
+        background-color: $filter-brand;
+        color: snow;
+      }
+      &--left{
+        &::before{
+          font: calc(16rem/16)/1 var(--ui-icon-font);
+          content: '\e9a0';
+          margin-right: 0.4em;
+        }
+      }
+      &--right{
+        &::before{
+          font: calc(16rem/16)/1 var(--ui-icon-font);
+          content: '\e9a8';
+          margin-right: 0.4em;
+        }
+      }
+    }
+}
+
+.filter__close{
+  @extend %little-button;
+  border-radius: 50%;
+  font-size: calc(18rem/16);
+  top: 1px;
+  padding: 3px 7px;
+  z-index: 11;
+  &:before{
+    color: #fff;
+    margin: 0;
+    display: inline-block;
+    content: "\2716";
+  }
+}

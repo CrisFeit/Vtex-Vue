@@ -1,0 +1,123 @@
+.bag{
+  &-bottom{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 1%;
+   margin: auto;
+   z-index: 300;
+   background-color: #fff;
+   position: absolute;
+   bottom: 0;
+   box-shadow: 0 -10px 25px 2px #fff;
+   &__discount{
+    @extend %totals;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+      &--show{
+        opacity: 1;
+      }
+
+      &-left,&-right{
+        font-size: calc(15rem/16);
+        width: 40%;
+        color: grey;
+      }
+      &-right{
+        text-align: right;
+      }
+  }
+    &__total{
+      @extend %totals;
+      margin: .5% auto;
+   
+      &-left,&-right{
+        font-size: calc(16rem/16);
+        width: 40%;
+      }
+      &-right{
+        color: $bag-color-secondary;
+        font-weight: bold;
+        text-align: right;
+      }
+    }
+    
+    &__cta{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      z-index: 530;
+      flex-wrap: wrap-reverse;
+      &-keep{
+        @extend %bag-cta;
+        color: $bag-color-primary-dark;
+        background-color: white;
+        //padding: 4% 0;
+        border-radius: 30px;
+        padding: 9px 0px 10px;
+        border: $bag-color-primary-dark 1px solid;
+        transition: background-color 0.2s ease-in-out;
+        font-size: calc(14rem/16);
+        &:hover {
+          color: white;
+          background-color:$bag-color-primary-dark;
+        }
+      }
+      &-finish{
+        @extend %bag-cta;
+        color:  #fff;
+        background-color: #25a05a;
+        padding: 1em 0;
+        border-radius: 30px;
+
+        font-size: calc(14rem/16);
+
+          &:hover {
+            font-weight: bold;
+          }
+        }
+    }
+    &__bonus{
+      margin: auto;
+      width: 98%;
+      color: $color-secondary-light;
+      padding: 0 4%;
+      display: flex;
+      flex-direction: column;
+      &-item{
+        display: inline-block;
+        font-family: "Open Sans";
+        font-size: calc(13em/16);
+        animation: fadeIn 0.5s ease;
+        padding: 1%;
+        &::before{
+          font-family: var(--ui-icon-font);
+          content: "\e9a7";
+          margin-right: 10px;
+          vertical-align: middle;
+          font-size: calc(17em/16);
+        }
+        &::after{
+          font-family: var(--ui-icon-font);
+          content: "\e9a5";
+          float: right;
+          transform: scale(1.2);
+        }
+      }
+          [data-cupom *="rete"]::before{
+            content: "\e999";
+          }
+          [data-cupom *="R$"]::before, [data-cupom *="upom"]::before,[data-cupom *="OFF"]::before{
+            content: "\e99b";
+          }
+    }
+  }
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

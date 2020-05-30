@@ -1,0 +1,51 @@
+.bag{
+  box-shadow: 0 0 40px 5px #000;
+}
+
+.bag-top{
+  background-color: $bag-color-dark;
+  color: $bag-color-secondary;
+
+  &__close{
+    background-color: $bag-color-dark;
+    color: $bag-color-secondary;
+    // box-shadow: 0 0 15px 10px #000;
+    &:hover{
+      transform: scale(1);
+    }
+  }
+  &__load{
+    background: linear-gradient(to right, #000,$bag-color-secondary) center/ 100%  3px no-repeat;
+    margin-bottom: 2%;
+  }
+}
+
+.bag-shelf{
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff;
+  }
+    &::-webkit-scrollbar-thumb {
+    border: 5px solid $bag-color-dark;
+  }
+}
+
+.bag-bottom{
+  background-color: $bag-color-dark;
+  color: $bag-color-secondary;
+
+  &__cta{
+    &-keep{
+      background-color: $bag-color-dark;
+      color: $bag-color-secondary;
+      border: solid 1px $bag-color-secondary;
+      &:hover {
+        color: $bag-color-dark;
+        background-color:$bag-color-secondary;
+      }
+    }
+    &-finish{
+      border: solid 1px snow;
+    }
+  }
+}
