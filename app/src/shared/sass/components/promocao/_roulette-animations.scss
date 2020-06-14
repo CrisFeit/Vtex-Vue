@@ -1,0 +1,36 @@
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%;
+	}
+  100%{
+    background-position: 100% 100%;
+  }
+}
+@keyframes shine{
+  0%{
+    background-color:#0f0f0f;
+  }
+  20%{
+    background-color: #8f1e2a;
+  }
+  40%{
+    background-color:#0f0f0f;
+  }
+  60%{
+    background-color: #8f1e2a;
+  }
+  80%{
+    background-color:#0f0f0f;
+  }
+  100%{
+    background-color: #8f1e2a;
+  }
+}
+@keyframes camuflage{
+  from{
+    background-position: 100% 50%;
+  }
+  to{
+    background-position: -50% 50%;
+  }
+}

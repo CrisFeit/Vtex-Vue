@@ -1,0 +1,57 @@
+.roulette{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 600;
+  display: none;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease 1s;
+  &--open{
+    display: flex;
+    opacity: 1;
+  }
+}
+.roulette-wrap{
+  font-size: 1rem;
+  margin: auto;
+  width: 75%;
+  max-width: 1028px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  color: #0f0f0f;
+  border-radius: 10px;
+  border: 3px solid $color-secondary;
+  background-color: white;
+  height: auto;
+  
+  @media (max-width: 768px) {
+    width: 95%;
+    height: 95%;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    max-width: 95vw;
+    max-height: 95vh;
+  }
+}
+  .roulette__title{
+    width: 100%;
+    margin:  auto;
+  }
+  .roulette-close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: calc(28rem/16);
+    cursor: pointer;
+    z-index: 400;
+        &:hover{
+          transform: scale(1.1);
+        }
+  }

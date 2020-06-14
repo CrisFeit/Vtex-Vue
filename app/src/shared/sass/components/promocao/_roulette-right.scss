@@ -1,0 +1,209 @@
+.roulette{
+  &__right{
+    flex: 1 1 45%;
+    height: 100%;
+    box-sizing: content-box;
+    padding: 25px 10px;
+    @media (max-width: 480px) {
+      padding: 0;
+      max-width: 100%;
+      max-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.roulette__game{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index:200;
+    transition: display 0s ease 1s,
+                  opacity 0.4s ease;
+    &--hide{
+      display: none;
+      opacity: 0;
+    }
+}
+
+  .roulette__disc{
+    position: relative;
+    width: 460px;
+    height: 460px;
+    background: url('https://edbr.vteximg.com.br/arquivos/roleta-promo.png') center center/ 100% no-repeat;
+    margin: auto;
+    
+    @media (max-width: 980px) {
+      width: 360px;
+      height: 360px;
+    }
+    
+      @media (max-width: 480px) {
+        width: 300px;
+        height: 300px;
+      }
+      @media (max-width: 360px) {
+        width: 250px;
+        height: 250px;
+      }
+  }
+
+  .roulette__needle{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border: solid #efefef 5px;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    overflow: visible;
+    border: 1px solid $color-secondary;
+    background: #0f0f0f url('https://edbr.vteximg.com.br/arquivos/Logo-E-Dourado.png') center 64% / 80% no-repeat;
+    &:after{
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 15px 18px 15px;
+      border-color: transparent transparent #0f0f0f transparent;
+      position: absolute;
+      top: 0;
+      right: -10px;
+      transform: rotate(50deg);
+    
+      @media (max-width: 768px) {
+        border-width: 0 12px 15px 12px;
+        top: -3px;
+        right: -10px;
+        transform: rotate(50deg);
+      }
+    }
+    
+    @media (max-width: 1028px) {
+      width: 60px;
+      height: 60px;
+    }
+    @media (max-width: 768px) {
+      width: 50px;
+      height: 50px;
+    }
+    @media (max-width: 360px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+.roulette__prise{
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+  height: 100%;
+  font-size : (20rem/16);
+  padding: 15px;
+  transition: position 0.3s ease ,
+  opacity 0.4s ease-in 0.3s;
+  pointer-events: none;
+  line-height: 22px;
+  min-height: 450px;
+  &--show{
+    position: relative;
+    opacity: 1;
+    pointer-events: initial;
+    }
+
+  
+  
+
+    &-text{
+      width: 70%;
+      text-align:center;
+    }
+    &-item{
+      text-align: center;
+      height: auto;
+      line-height: 25px;
+      p{
+        margin-bottom: 10px;
+      }
+      strong{
+        display: block;
+        font-size: calc(18rem/16);
+        background:#8f1e2a;
+        color: #fff;
+        padding: 10px 25px;
+        box-sizing: content-box;
+        border-radius: 10px;
+        margin: auto;
+        width: max-content;
+        margin-bottom: 10px;
+        &::before{
+          font-family:var(--ui-icon-font);
+          margin-right: 10px;
+          vertical-align: middle;
+        }
+        &.frete::before{
+          content: "\e999";
+        }
+        &.amostra::before{
+          content: "\e99f";
+        }
+        &.off::before{
+          content: "\e99b";
+        }
+        &.brinde::before{
+          content: "\e9a1";
+        }               
+      }
+    }
+    &-cupom{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      padding: 2% 0;
+      min-width: fit-content;
+      background-color: #0f0f0f;
+      transition: all ease 0.3s;
+      outline: none;
+      font-size: calc(18rem/16);
+      color: $color-secondary;
+      border: 2px dashed $color-secondary;
+      text-align: center;
+      &:hover{
+        font-weight:bold;
+      }
+    }
+    &-copy{
+      background-color: transparent;
+      border: none;
+      float: right;
+
+      &:active {
+        transform: translateY(4px);
+      }
+
+      &::before{
+      margin-right: 5px;
+      font-family: var(--ui-icon-font);
+      vertical-align: middle;
+      content: "\e909";
+      cursor: pointer;
+    }
+  }
+    
+}
+  
+ 
+
