@@ -1,0 +1,135 @@
+.product{
+  position: relative;
+  margin: 1%;
+  padding: 1%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: $filter-dark-middle;
+  overflow: hidden;
+  animation: fadeIn 0.8s ease;
+  &:hover{
+    box-shadow: 0 2px 10px 0 #d0d0d0;
+  }
+  @include device(phone){
+    flex-basis:48%;
+    position: relative;
+    height: max-content;
+  }
+  @include device(tablet){
+    flex-basis:31%;
+    position: relative;
+    height: max-content;
+  }
+  @include device(desktop){
+    flex-basis:21%;
+    z-index: 2;
+    &:hover{
+      box-shadow: 0 5px 15px 0 #d0d0d0;
+    }
+  }
+}
+
+.product__wishlist{
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  z-index: 5;
+  cursor: pointer;
+    &:hover{
+      font-weight: bolder;
+    }
+    .lnc-icon:after{
+      font-family: var(--ui-icon-font);
+      content: '\e91b';
+      display: block;
+      font-size: calc(25rem/16);
+      color: $filter-brand;
+    }
+    .lnc-label{
+      display: none !important;
+    }
+}
+
+.product__link{
+  width: 100%;
+  @include device(mobile){
+    height: auto;
+    text-align: center;
+  }
+  @include device(desktop){
+    display: flex;
+    position: relative;
+    padding-bottom: 1em;
+    overflow: hidden;
+  }
+}
+
+.product__img{
+ margin: auto;
+}
+
+.product__outOfStock{
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  color: $filter-gold;
+  font-weight: bold;
+  font-size: calc(14rem/16);
+}
+
+.product__name{
+  width: 100%;
+  margin-bottom: 2em;
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: left;
+  font-size: calc(12rem/16);
+  &--out{
+    width: 100%;
+  }
+  @include device(desktop){
+    width: 65%;
+    font-size: calc(15rem/16);
+    margin-bottom: initial;
+  }
+}
+
+.product__info{
+  flex-grow: 2;
+  @include device(mobile){
+    width: auto;
+    text-align: center;
+    flex-grow: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  @include device(desktop){
+    width: 30%;
+    text-align: right;
+  }
+}
+
+.product__discount{
+  text-decoration: line-through;
+  color: grey;
+  font-size: calc(14rem/16);
+  @include device(mobile){
+    width: 100%;
+  }
+}
+
+.product__price{
+  font-size: calc(20rem/16);
+  color: $filter-gold;
+  font-weight: bold;
+  @include device(mobile){
+    width: 100%;
+  }
+}
+.product__installments{
+font-size: calc(12rem/16);
+}

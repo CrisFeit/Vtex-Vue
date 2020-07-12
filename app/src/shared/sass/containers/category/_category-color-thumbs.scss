@@ -1,0 +1,38 @@
+.types__thumb{
+  &[title*="Marrom"] i{
+    background-color: #2e0805c9;
+  }
+  &[title*="Nude"] i{
+    background-color: #a66761;
+  }
+  &[title*="Preto"] i{
+    background-color: #111;
+  }
+  &[title*="Rosa"] i{
+    background-color: #c95581;
+  }
+  &[title*="Roxo"] i {
+    background-color: #542785;
+  }
+  &[title*="Vermelho"] i{
+    background-color: #cd0c24;
+  }
+  &[title*="Vinho"] i{
+    background-color: #8e141b;
+  }
+  &[title*="Laranja"] i{
+    background-color: orangered;
+  }
+  &[title*="Dourado"] i{
+    background-color: goldenrod;
+  }
+  &[title*="Azul"] i{
+    background-color: blue;
+  }
+  &[title*="Cinza"] i{
+    background-color: silver;
+  }
+  &[title*="Verde"] i{
+    background-color: green;
+  }
+}

@@ -1,0 +1,32 @@
+.breadcrumbs{
+  display: block;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 0.720em;
+  ul{
+      li{
+          display: inline-block;
+          &:after{
+              content: '/';
+              display: inline-block;
+              padding: 0 6px;
+          }
+          &:last-child{
+              &:after{
+                  content: '';
+              }
+              a{
+                  font-weight: bolder;
+                  font-style: normal;
+              }
+          }
+          a{
+              font-family: var(--ui-brand-font);
+              color:var(--ui-dark);
+              letter-spacing: .05em;
+              text-transform: uppercase;
+              text-decoration: none;
+          }
+      }
+  }
+}

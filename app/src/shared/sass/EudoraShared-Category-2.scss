@@ -1,0 +1,23 @@
+/*
+   Packages
+*/
+
+@import '../../packages/sass/config-base';
+
+/*
+  Category Shared
+*/
+
+@import 'containers/category/category-base';
+
+@include device(mobile) {
+  .is-desktop{
+    display: none;
+  }
+}
+
+@include device(desktop) {
+  .is-mobile{
+    display: none;
+  }
+}

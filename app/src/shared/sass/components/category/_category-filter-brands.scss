@@ -1,0 +1,31 @@
+.brands{
+  @extend %filters-box;
+  @include device(desktop){
+    flex-basis: auto;
+    max-width: 45%;
+    padding-left: 1em;
+  }
+  &__title{
+    @extend %filters-title;
+    @include device(mobile){
+      width: 100%; 
+      @include filter-nav-title;
+    }
+  }
+  &__box{
+    @extend %filters-selectors;
+    @include device(desktop){
+      flex-wrap: wrap;
+      padding: 0.5em;
+    }
+  }
+  &__label{
+    @extend %filters-label;
+    @extend %hover-default;
+    &--active{
+      border-color: $filter-brand;
+      color: snow;
+      background-color: $filter-brand;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.filter__price{
+  @include device(mobile){
+    width: auto;
+    height: auto;
+    padding-bottom: 0.5em;
+    z-index: 3;
+  }
+  @include device(desktop){
+    position: absolute;
+    left: 0;
+    width: auto;
+    height: auto;
+  }
+}
+.filter__price-title{
+  @include device(mobile){
+    width: 100%;
+    @include filter-nav-title;
+  }
+  @include device(desktop){
+    font-size: calc(15rem/16);
+    color: $filter-dark-middle;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+}
+.filter__price-wrap{
+  margin-bottom: 0.5em;
+  @include device(mobile){
+    margin: 0.3em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.filter__price-value{
+  @extend %filters-label;
+  @include device(mobile){
+    color: snow;
+    text-shadow: 0 0 6px snow;
+    font-size: calc(20rem/16);
+    font-weight: bold;
+  }
+  @include device(desktop){
+    border-color: $filter-brand;
+    color: snow;
+    background-color: $filter-brand;
+    font-size: calc(14rem/16);
+  }
+}
+.filter__price-slider{
+    -webkit-appearance: none;
+    outline: none;
+    background: linear-gradient(135deg,#dab1eb , $filter-brand,$filter-brand-dark ) center/ 100%  3px no-repeat;
+    transition: box-shadow .3s;
+    @include device(phone){
+      width: 98%;
+      margin: auto;
+    }
+    @include device(tablet){
+      width: 125px;
+      height: 30px;
+    }
+    @include device(desktop){
+      width: 250px;
+      height: 50px;
+      cursor: pointer;
+    }
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 40px;
+          height: 40px;
+          z-index: 3;
+          border-radius: 50%;
+          border: 2px solid $filter-silver;
+          cursor: grab;
+          background-color: $filter-brand-dark;
+          &:hover{
+            box-shadow: 0 0 10px 2px $filter-brand;
+          }
+      }
+      &::-moz-range-thumb {
+        width: 35px;
+        height: 35px;
+        display: block;
+        z-index: 3;
+        border-radius: 50%;
+        border: 2px solid $filter-silver;
+        cursor: grab;
+        background-color: $filter-brand-dark;
+        &:hover{
+          box-shadow: 0 0 10px 2px $filter-brand;
+        }
+      }
+}

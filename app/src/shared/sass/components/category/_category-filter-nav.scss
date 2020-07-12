@@ -1,0 +1,57 @@
+.nav-box{
+  display: flex;
+  width: 100%;
+  height: auto;
+  @include device(mobile){
+    flex-direction: column;
+    position: absolute;
+    -webkit-appearance: none;
+    background-color: white;
+    left: 0;
+    z-index: 10;
+    bottom: 100%;
+    transition: transform .3s;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    overflow-y: auto;
+  }
+  @include device(desktop){
+    margin: 1% 0 ;
+  }
+}
+
+.filter__block{
+  background-color: transparent;
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  z-index: 8;
+}
+
+.filter__item{
+  @include device(mobile){
+    width: 100%;
+    height: auto;
+  }
+  @include device(desktop){
+    position: relative;
+    &:nth-child(2),&:nth-child(3){
+      border-left: 1px solid $filter-silver;
+    }
+  }
+}
+
+
+.filters__box{
+  &--open{
+    transform: scaleY(1);
+  }
+}
+
+
+.overlay{
+  @include device(mobile){
+    z-index: 7 !important;
+    overflow: hidden !important;
+  }
+}
