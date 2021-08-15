@@ -1,9 +1,6 @@
 # Vtex Vue
  ### Set of Plugins to do shopping in Vtex more faster , build with Vue.js 
 
-#### author   : Cristiano Rocha Feitoza,
-#### homepage : https://github.com/CrisFeit/Vtex-Vue
-
 ##  Features
 * Filtros Single Page
 * Minicart com Gamification
