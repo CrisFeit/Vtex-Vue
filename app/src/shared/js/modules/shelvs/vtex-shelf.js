@@ -31,7 +31,7 @@ function fecthReviews(ids) {
 return $.ajax({
         method: 'GET',
         url: `https://service.yourviews.com.br/api/v2/pub/review/ReviewShelf?productids=${ids}`,
-        headers: { YVStoreKey: '46589e5a-a798-49cf-a104-c4211c95666e'}
+        headers: { YVStoreKey: ''}
         }).done( function(reviews) {
             return reviews
         })

@@ -75,7 +75,7 @@ export const mixinMobile = {
       return axios({
           method: 'get',
           url: `https://service.yourviews.com.br/api/v2/pub/review/ReviewShelf?productids=${ids}`,
-          headers: { YVStoreKey: '46589e5a-a798-49cf-a104-c4211c95666e'}
+          headers: { YVStoreKey: ''}
       }).then( reviews => {
           for (let review of reviews.data.Element) {
             products.find(shelf => shelf.productId == review.ProductId).reviews = review
